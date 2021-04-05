@@ -3,8 +3,8 @@ processar lotes com grande quantidade de dados, processo de pagamentos,
 geração de relatórios, etc.
 
 ### Tecnologias
-Backend
-  Spring Boot
+* Backend
+  * Spring Boot
 * Processamento de Filas
   * RabbitMQ
 * Documentação das APIS
