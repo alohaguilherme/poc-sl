@@ -1,0 +1,22 @@
+server:
+  port: 8083
+spring:
+  data:
+      mongodb:
+        host: localhost
+        port: 27017                
+        database: poc_sl_mgdb
+        username: root
+        password: root        
+  rabbitmq:    
+    request: 
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
+      exchange: 
+        producer: ex.producer.demo-sl
+      routing-key: 
+        producer: rk.producer.demo-sl
+      deadletter:
+        producer: dl.producer.demo-sl

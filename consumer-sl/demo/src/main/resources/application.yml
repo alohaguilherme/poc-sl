@@ -1,0 +1,27 @@
+server:
+  port: 8085
+spring:
+  datasource:    
+    url: jdbc:postgresql://localhost:5435/poc_sl_pg
+    username: postgres
+    password: docker
+  jpa:
+    show_sql: true
+    use_sql_comments: true
+    format_sql: true
+    type: trace
+    database: postgresql
+    hibernate:
+      ddl-auto: none                        
+  rabbitmq:    
+    request: 
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
+      exchange: 
+        producer: ex.producer.demo-sl
+      routing-key: 
+        producer: rk.producer.demo-sl
+      deadletter:
+        producer: dl.producer.demo-sl
