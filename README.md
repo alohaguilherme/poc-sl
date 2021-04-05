@@ -26,7 +26,7 @@ docker-compose up -d
 
 Após a execução do comando poderá validar os serviços foram iniciados, conforme seu respectivo S.O:
 
-###### WINDOWS/MAC/Linux
+###### WINDOWS/MAC/LINUX
 Poderá ir no terminal de sua preferencia, e digitar o comando:
  ```
  docker container ps
